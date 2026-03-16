@@ -15,6 +15,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
       b. "Attempts allowed: 8"
     this would be present before any attempts at guessing were actually made.
 
+    3. The hints provided after a guess were misleading. For instance, when the guess was too high, the hint said "Go HIGHER!" instead of "Go LOWER!", which confused the player and made winning impossible.
+
 ---
 
 ## 2. How did you use AI as a teammate?
