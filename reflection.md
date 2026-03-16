@@ -60,28 +60,3 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   1. I would provide more detailed prompts to AI tools, specifying exact requirements and edge cases upfront, to reduce the need for iterative corrections and ensure the generated code aligns more closely with expectations from the start.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
   1. This project demonstrated that AI-generated code, while a useful starting point, often contains subtle bugs and requires thorough manual review and testing. It shifted my perspective to view AI as a collaborative tool rather than a definitive solution, emphasizing the importance of human oversight in debugging and refining automated outputs.
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
-  1. I ran pytest on the test_game_logic.py file, which executed tests for the check_guess function. The tests passed, confirming that the function correctly identified winning guesses, too high, and too low outcomes, demonstrating that the logic was sound and the hints were now accurate.
-- Did AI help you design or understand any tests? How?
-  1. AI assisted by suggesting the structure for the test cases in test_game_logic.py, providing examples of how to assert outcomes for different guess scenarios. This helped me understand how to write focused unit tests for the game logic functions.
-
----
-
-## 4. What did you learn about Streamlit and state?
-
-- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-  1. Streamlit reruns are like refreshing the entire app script every time a user interacts with it, such as clicking a button or changing a slider, which allows the app to update dynamically based on new inputs. Session state acts as a persistent storage mechanism that keeps variables like the secret number or score across these reruns, ensuring that data doesn't reset unintentionally and maintaining the app's continuity during the user's session.
-
----
-
-## 5. Looking ahead: your developer habits
-
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-  1. The habit of running automated tests with pytest after each fix to validate changes, as it provided quick feedback on whether the logic was correct and helped catch regressions early.
-- What is one thing you would do differently next time you work with AI on a coding task?
-  1. I would provide more detailed prompts to AI tools, specifying exact requirements and edge cases upfront, to reduce the need for iterative corrections and ensure the generated code aligns more closely with expectations from the start.
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
-  1. This project demonstrated that AI-generated code, while a useful starting point, often contains subtle bugs and requires thorough manual review and testing. It shifted my perspective to view AI as a collaborative tool rather than a definitive solution, emphasizing the importance of human oversight in debugging and refining automated outputs.
->>>>>>> d7c4556e83b6dc6728177e81deb8bf6a200c20fa
