@@ -2,6 +2,7 @@ import random
 import streamlit as st
 
 def get_range_for_difficulty(difficulty: str):
+    # NOTE/FIXME: A bug occurs here (normal and hard are swapped)...
     if difficulty == "Easy":
         return 1, 20
     if difficulty == "Normal":
@@ -92,8 +93,8 @@ st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
-if "attempts" not in st.session_state:
-    st.session_state.attempts = 1
+if "attempts" not in st.session_state: # BUG: This is off by one with the other label, on line 117 (or similar scenario if already changed).
+    st.session_state.attempts = 1 
 
 if "score" not in st.session_state:
     st.session_state.score = 0
@@ -113,7 +114,7 @@ st.info(
 
 with st.expander("Developer Debug Info"):
     st.write("Secret:", st.session_state.secret)
-    st.write("Attempts:", st.session_state.attempts)
+    st.write("Attempts:", st.session_state.attempts) # BUG: This is off by one with the other label, on line 96 (or similar scenario if already changed).
     st.write("Score:", st.session_state.score)
     st.write("Difficulty:", difficulty)
     st.write("History:", st.session_state.history)
